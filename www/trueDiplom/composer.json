@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "require": {
+    "diversen/simple-php-translation": "^3.0",
+    "faapz/pdo": "^2.2",
+    "php-kit/ext-pdo": "^1.1",
+    "ext-pdo": "*",
+    "ext-curl": "*",
+    "ext-openssl": "*",
+    "ext-mbstring": "*",
+    "ext-json": "*",
+    "phpoffice/phpspreadsheet": "^1.29",
+    "ext-zip": "*",
+    "samayo/bulletproof": "4.0.*",
+    "robmorgan/phinx": "^0.14.0",
+    "peppeocchi/php-cron-scheduler": "^4.0",
+    "symfony/var-dumper":  "*",
+    "beyondcode/laravel-dump-server": "*",
+    "calcinai/php-imagick": "*"
+  }
+}

@@ -1,0 +1,30 @@
+version: '2'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "127.0.0.1:80:80"
+    volumes:
+      - ./hosts:/etc/nginx/conf.d
+      - ./www:/var/www
+      - ./logs:/var/log/nginx
+    links:
+      - php
+
+  mysql:
+    image: mysql
+    ports:
+      - "3301:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql  09djsat§ klhlgj763
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  php:
+    build: ./images/php
+    links:
+      - mysql
+    volumes:
+      - ./www:/var/www
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

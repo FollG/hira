@@ -1,0 +1,33 @@
+{
+    "name": "diversen/simple-php-translation",
+    "type": "library",
+    "description": "simple solution for doing translation, extracting translations, and doing auto translation through google",
+    "homepage": "https://github.com/diversen/simple-php-translation",
+    "keywords": ["translate", "translation", "I18n", "simple"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dennis Iversen",
+            "email": "dennis.iversen@gmail.com",
+            "homepage": "https://github.com/diversen",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+        
+    },
+    "require-dev": {
+        "google/cloud-translate": "^1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Diversen\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}

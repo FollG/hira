@@ -1,0 +1,96 @@
+.form-header h2 {
+    background: transparent;
+    font-size: 12px;
+    letter-spacing: -.006em;
+    font-weight: bold;
+    line-height: 1.666666666667;
+    margin: 0;
+    color: whitesmoke;
+    padding: 4px 64px 4px 10px;
+}
+.form-header {
+    background: var(--main-foreign-color);
+    -moz-border-radius-topleft: 6px;
+    border-top-left-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-right-radius: 6px;
+    margin: 0;
+    min-height: 24px;
+    padding: 0;
+    position: relative;
+}
+.form-body {
+    padding: 0 20px 20px 20px;
+}
+.auth-form {
+    border-radius: 3px;
+}
+#auth-button {
+    box-sizing: border-box;
+    transition: background-color .1s ease-out;
+    border-radius: 3.01px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    background-image: none;
+    background-color: var(--main-foreign-color);
+    color: whitesmoke;
+    display: inline-block;
+    height: 2.14285714em;
+    line-height: 1.42857143em;
+    margin: 0;
+    padding: 4px 10px;
+    vertical-align: initial;
+    white-space: nowrap;
+}
+.auth-input {
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+    border: 1px solid slategray;
+    border-radius: 3.01px;
+    box-sizing: border-box;
+    font-size: inherit;
+    margin: 0;
+    vertical-align: initial;
+    background-color: var(--input-background-color);
+    text-decoration-color: var(--root-text-color);
+    width: 240px;
+    padding: 3px;
+}
+.auth-root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--root-background-color);
+}
+.login-container {
+    background-color: var(--form-background-color);
+}
+.field-group {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.see-password-btn {
+    display: flex;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--main-foreign-color);
+    border-radius: 4px;
+    cursor:pointer;
+}
+.contact-admin {
+    user-focus: none;
+    user-select: none;
+}
